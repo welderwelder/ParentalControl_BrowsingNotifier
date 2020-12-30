@@ -40,7 +40,7 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp; _credentials.py_ &nbsp; &nbsp;   ---> &nbsp; %HOMEDRIVE%%HOMEPATH%\\_"install~dir"_\chk_his <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>(C:\Users\ u-s-e-r \"install~dir"\chk_his)</i>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>(C:\Users\ u-s-e-r \\_"install~dir"_\chk_his)</i>  
                                                              
 "**start**" --> "run" --> "shell:startup"
 
