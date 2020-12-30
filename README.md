@@ -1,5 +1,5 @@
 <h1>Parental Control - browsing notifier (browser history checker)</h1>
-script runs on _childs_ pc in the background, sampling browsers histories - sends simple summary to designated _parental_ email address
+script runs on <i>childs</i> pc in the background, sampling browsers histories - sends simple summary to designated <i>parental</i> email address
 
 **credentials.py**: &nbsp; &nbsp; sender mail &nbsp;+&nbsp; pw  &nbsp;+&nbsp;  receipients mail list
 
