@@ -29,7 +29,7 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        _(example: "/home/pi/Documents/chk_his")_
+                        _(example: "/home/pi/Documents/chk_his/")_
 
 **chmod** +x shk_his.sh
 
