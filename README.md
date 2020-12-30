@@ -1,11 +1,11 @@
-#Parental Control - browsing notifier (browser history checker)
+<h1>Parental Control - browsing notifier (browser history checker)</h1>
 script runs on _childs_ pc in the background, sampling browsers histories - sends simple summary to designated _parental_ email address
 
 **credentials.py**: &nbsp; &nbsp; sender mail &nbsp;+&nbsp; pw  &nbsp;+&nbsp;  receipients mail list
 
 <br>
 
-###Linux:
+<h3>Linux:</h3>
 
 install python3 (sqlite3 should be included, if not: should be installed: "sudo apt install sqlite")
 
@@ -13,15 +13,15 @@ install python3 (sqlite3 should be included, if not: should be installed: "sudo 
 &nbsp; _chk_his.py_ <br>
 &nbsp; _chk_his_env.py_ <br>
 &nbsp; _chk_his.sh__ <br>
-&nbsp; _credentials.py_ &nbsp; &nbsp; ---> &nbsp; &nbsp;  ~/_"install~dir"_/chk_his
+&nbsp; _credentials.py_ &nbsp; &nbsp; ---> &nbsp; &nbsp;  $HOME/_"install~dir"_/chk_his
 
 **chmod** +x shk_his.sh
 
-**crontab** -e      ----->    @reboot $HOME/_"install~dir"_/chk_his/chk_his.sh
+**crontab** -e &nbsp;&nbsp; -----> &nbsp;&nbsp; @reboot &nbsp; $HOME/_"install~dir"_/chk_his/chk_his.sh
 
 <br>
 
-###Windows:
+<h3>Windows:</h3>
 
 install python3 (sqlite3 should be included, if not: should be installed)
 
@@ -38,7 +38,7 @@ put "**chk_his.vbs**" file inside a dir that opened by above command
 
 <br><br>
  
-###TODO:
+<h3>TODO:</h3>
 - installer~
 - online registration - credentials
 - white list online handle (get_yield)
