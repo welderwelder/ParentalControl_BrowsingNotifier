@@ -23,13 +23,18 @@ _IF NOT INSTALLED:_ install python3<br>
 **copy**: <br> 
 &nbsp; _chk_his.py_ <br>
 &nbsp; _chk_his_env.py_ <br>
-&nbsp; _chk_his.sh__ <br>
-&nbsp; _credentials.py_ &nbsp; &nbsp; ---> &nbsp; &nbsp;  $HOME/_"install~dir"_/chk_his/
+&nbsp; _chk_his.sh_ <br>
+&nbsp; _credentials.py_ &nbsp; &nbsp; ---> &nbsp; &nbsp;  $HOME/_"install~dir"_/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        _(example: "/home/pi/Documents/chk_his")_
 
 **chmod** +x shk_his.sh
 
 **crontab** -e &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp; ---> &nbsp;&nbsp; @reboot &nbsp; $HOME/_"install~dir"_/chk_his/chk_his.sh
+&nbsp; ---> &nbsp;&nbsp; @reboot &nbsp; $HOME/_"install~dir"_/chk_his.sh
 
 <br>
 
@@ -46,11 +51,12 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp; _chk_his.py_  <br>
 &nbsp; _chk_his_env.py_  <br>
 &nbsp; _chk_his.bat_ <br>
-&nbsp; _credentials.py_ &nbsp;&nbsp;&nbsp;&nbsp; ---> &nbsp; %HOMEDRIVE%%HOMEPATH%\\_"install~dir"_\chk_his <br> 
+&nbsp; _credentials.py_ &nbsp;&nbsp;&nbsp;&nbsp; ---> &nbsp; %HOMEDRIVE%%HOMEPATH%\\_"install~dir"_\ <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>(C:\Users\ u-s-e-r \\_"install~dir"_\chk_his)</i>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<i>(example: C:\Users\ u-s-e-r \\chk_his\\)</i>  
                                                              
 "**start**" --> "run" --> "shell:startup"
 
