@@ -29,8 +29,9 @@ install python3 (sqlite3 should be included, if not: should be installed)
 &nbsp; _chk_his.py_  <br>
 &nbsp; _chk_his_env.py_  <br>
 &nbsp; _chk_his.bat_ <br>
-&nbsp; _credentials.py_ &nbsp; &nbsp;   ---> &nbsp; %HOMEDRIVE%%HOMEPATH%\\_"install~dir"_\chk_his &nbsp; 
-                                                      _(C:\Users\ u-s-e-r \"install~dir"\chk_his)_  
+&nbsp; _credentials.py_ &nbsp; &nbsp;   ---> &nbsp; %HOMEDRIVE%%HOMEPATH%\\_"install~dir"_\chk_his <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(C:\Users\ u-s-e-r \"install~dir"\chk_his)_  
                                                              
 "**start**" --> "run" --> "shell:startup"
 
@@ -39,9 +40,9 @@ put "**chk_his.vbs**" file inside a dir that opened by above command
 <br><br>
  
 <h3>TODO:</h3>
-- installer~
-- online registration - credentials
-- white list online handle (get_yield)
+- installer~ <br>
+- online registration - credentials <br>
+- white list online handle (get_yield) <br>
 
 
 
