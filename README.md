@@ -1,14 +1,20 @@
 <h1>Parental Control - browsing notifier (browser history checker)</h1>
 Script runs hidden on <i>childs</i> PC in the background, sampling browsers histories - sends simple summary to designated <i>parental</i> email address.
-<br>
+<br><br>
 
-**credentials.py**: &nbsp; &nbsp; sender mail &nbsp;+&nbsp; pw  &nbsp;+&nbsp;  receipients mail list
+create **credentials.py** by copying _"credentials (copy).py"_<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+sender mail &nbsp;+&nbsp; pw  &nbsp;+&nbsp;  receipients mail list
 
 <br>
 
 <h3>Linux:</h3>
 
 _IF NOT INSTALLED:_ install python3<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -22,7 +28,8 @@ _IF NOT INSTALLED:_ install python3<br>
 
 **chmod** +x shk_his.sh
 
-**crontab** -e &nbsp;&nbsp; -----> &nbsp;&nbsp; @reboot &nbsp; $HOME/_"install~dir"_/chk_his/chk_his.sh
+**crontab** -e &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; ---> &nbsp;&nbsp; @reboot &nbsp; $HOME/_"install~dir"_/chk_his/chk_his.sh
 
 <br>
 
@@ -32,13 +39,15 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 (sqlite3 should be included, if not: should be installed)
 
 **copy**: <br>
 &nbsp; _chk_his.py_  <br>
 &nbsp; _chk_his_env.py_  <br>
 &nbsp; _chk_his.bat_ <br>
-&nbsp; _credentials.py_ &nbsp; &nbsp;   ---> &nbsp; %HOMEDRIVE%%HOMEPATH%\\_"install~dir"_\chk_his <br> 
+&nbsp; _credentials.py_ &nbsp;&nbsp;&nbsp;&nbsp; ---> &nbsp; %HOMEDRIVE%%HOMEPATH%\\_"install~dir"_\chk_his <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>(C:\Users\ u-s-e-r \\_"install~dir"_\chk_his)</i>  
