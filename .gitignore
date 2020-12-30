@@ -1,0 +1,11 @@
+
+credentials.py
+
+his_flt*.txt
+
+venv/
+
+__pycache__/
+
+*.pyc
+*.pyo
