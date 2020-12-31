@@ -24,6 +24,8 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp; _chk_his.py_ <br>
 &nbsp; _chk_his_env.py_ <br>
 &nbsp; _chk_his.sh_ <br>
+&nbsp; _install_modules.sh_ <br>
+&nbsp; _requirements.txt_ <br>
 &nbsp; _credentials.py_ &nbsp; &nbsp; ---> &nbsp; &nbsp;  $HOME/_"install~dir"_/<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -31,7 +33,11 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         _(example: "/home/pi/Documents/chk_his/")_
 
-**chmod** +x shk_his.sh
+**chmod** +x _install_modules.sh_<br>
+run: "**./install_modules.sh**"
+
+
+**chmod** +x chk_his.sh
 
 **crontab** -e &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp; ---> &nbsp;&nbsp; @reboot &nbsp; $HOME/_"install~dir"_/chk_his.sh
@@ -41,17 +47,13 @@ _IF NOT INSTALLED:_ install python3<br>
 <h3>Windows:</h3>
 
 _IF NOT INSTALLED:_ install python3<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-(sqlite3 should be included, if not: should be installed)
+(sqlite3 should be included, if not: should be installed: install_modules section)
 
 **copy**: <br>
 &nbsp; _chk_his.py_  <br>
 &nbsp; _chk_his_env.py_  <br>
 &nbsp; _chk_his.bat_ <br>
-&nbsp; _install.bat_ <br>
+&nbsp; _install_modules.bat_ <br>
 &nbsp; _requirements.txt_ <br>
 &nbsp; _credentials.py_ &nbsp;&nbsp;&nbsp;&nbsp; ---> &nbsp; %HOMEDRIVE%%HOMEPATH%\\_"install~dir"_\ <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -59,6 +61,8 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 <i>(example: C:\Users\ u-s-e-r \\chk_his\\)</i>  
+
+run: "**install_modules.bat**"
                                                              
 "**start**" --> "run" --> "shell:startup"
 
