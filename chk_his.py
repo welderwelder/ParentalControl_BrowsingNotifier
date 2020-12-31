@@ -214,7 +214,7 @@ class History:
         try:
             now = datetime.now()
             last = str(now - timedelta(                         # days=self.delta_dd,
-                        # hours=self.delta_hh,                  # needed because of 3-hour difference !!!
+                        # hours=self.delta_hh,                  # needed because of 3-hour difference !!!  (solved!)
                         # comm-out _hh ---> query performed with localtime~flag!
                         minutes=self.delta_mm,
                         seconds=self.delta_sec))[:19]
