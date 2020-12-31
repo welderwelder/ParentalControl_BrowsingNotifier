@@ -10,4 +10,4 @@ echo %date% %time% >> chk_his.log
 REM let the network connect~~ on reboot
 timeout 25
 
-python3 chk_his.py
+python chk_his.py
