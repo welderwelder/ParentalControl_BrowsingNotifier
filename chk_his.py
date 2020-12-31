@@ -256,8 +256,8 @@ l_yield_vcb = env.L_YIELD_VCB
 while Running:
     #
     cur_dd = datetime.today().strftime('%d')
-    #TODO: noon(12:00) mail
-    if date_dd != cur_dd:                                        # on restart + every daychange(or wake from sleep)
+    # TODO: noon(12:00) mail
+    if date_dd != cur_dd:                                       # on restart(dd=0) + every daychange(or wake from sleep)
         refreshing_daily_mail(msg_yield_global_daily)
         date_dd = cur_dd
         msg_yield_global_daily = ''
@@ -277,8 +277,6 @@ while Running:
         if os.path.isfile(FF_HIS_FLT) and os.path.getsize(FF_HIS_FLT) > 0:
             msg_yield, msg_non_yield = chk_msg_yield(FF_HIS_FLT, l_yield_vcb)
             msg_yield_global_daily += msg_yield.replace(',', ' ' * 3)
-            #TODO: check if already was sent in previous message (because of time difference~)
-            # or solve hour difference problem history <> currnet time
             msg = transform_2_sendable(msg_non_yield)
             clear_file_content(FF_HIS_FLT)
             if msg != '':
