@@ -51,6 +51,8 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp; _chk_his.py_  <br>
 &nbsp; _chk_his_env.py_  <br>
 &nbsp; _chk_his.bat_ <br>
+&nbsp; _install.bat_ <br>
+&nbsp; _requirements.txt_ <br>
 &nbsp; _credentials.py_ &nbsp;&nbsp;&nbsp;&nbsp; ---> &nbsp; %HOMEDRIVE%%HOMEPATH%\\_"install~dir"_\ <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
