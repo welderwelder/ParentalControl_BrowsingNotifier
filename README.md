@@ -24,7 +24,7 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp; _chk_his.py_ <br>
 &nbsp; _chk_his_env.py_ <br>
 &nbsp; _chk_his.sh_ <br>
-&nbsp; _insooiiii89zsqabcvvvvvvvvh_ <br>
+&nbsp; _install_modules.sh_ <br>
 &nbsp; _requirements.txt_ <br>
 &nbsp; _credentials.py_ &nbsp; &nbsp; ---> &nbsp; &nbsp;  $HOME/_"install~dir"_/<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
