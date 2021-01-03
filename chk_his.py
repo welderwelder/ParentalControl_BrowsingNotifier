@@ -96,7 +96,7 @@ def chk_msg_yield(ff_his_flt, i_l_yield_vcb):
             f_read = f.read()
 
         for w in f_read.split('\n'):
-            if w is not '':
+            if w is not '':                                     # SyntaxWarning? is no with literal - meant: "!="
                 if any(y in w for y in i_l_yield_vcb):          # if 'walla' in w.split(',')[1].split('/')[0]:
                     msg_yield += (w + '\n')
                 else:

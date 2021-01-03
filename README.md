@@ -24,7 +24,7 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp; _chk_his.py_ <br>
 &nbsp; _chk_his_env.py_ <br>
 &nbsp; _chk_his.sh_ <br>
-&nbsp; _install_modules.sh_ <br>
+&nbsp; _insooiiii89zsqabcvvvvvvvvh_ <br>
 &nbsp; _requirements.txt_ <br>
 &nbsp; _credentials.py_ &nbsp; &nbsp; ---> &nbsp; &nbsp;  $HOME/_"install~dir"_/<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -55,7 +55,7 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp; _chk_his.bat_ <br>
 &nbsp; _install_modules.bat_ <br>
 &nbsp; _requirements.txt_ <br>
-&nbsp; _credentials.py_ &nbsp;&nbsp;&nbsp;&nbsp; ---> &nbsp; %HOMEDRIVE%%HOMEPATH%\\_"install~dir"_\ <br> 
+&nbsp; _credentials.py_ &nbsp;&nbsp;&nbsp;&nbsp; ---> &nbsp; %HOMEDRIVE%%HOMEPATH%\\chk_his\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -66,8 +66,8 @@ run: "**install_modules.bat**"
                                                              
 "**start**" --> "run" --> "shell:startup"
 
-put "**chk_his.vbs**" file inside a dir that opened by above command
-
+put "**chk_his.vbs**" file inside a dir that opened by above command,<br>
+(vbs runs bat file ==> location should be at homepath "chk_his") 
 <br><br>
  
 <h3>TODO:</h3>
