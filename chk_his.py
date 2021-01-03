@@ -257,6 +257,7 @@ while Running:
     #
     cur_dd = datetime.today().strftime('%d')
     # TODO: noon(12:00) mail
+    # TODO 2: msg_yield_global.. eliminated after pc shut ==> save~?
     if date_dd != cur_dd:                                       # on restart(dd=0) + every daychange(or wake from sleep)
         refreshing_daily_mail(msg_yield_global_daily)
         date_dd = cur_dd
