@@ -12,7 +12,7 @@ GM_PW = cred.GM_PW
 L_RECIPIENTS = cred.L_RECIPIENTS
 
 
-L_YIELD_VCB = ['gov.gov.gov.il'
+L_WHITE_LIST_VCB = ['gov.gov.gov.il'            # init value in chk_his
                # , 'finance.yahoo'
                # , 'finance.yaho'
                # , 'icar.co.il'
@@ -94,15 +94,15 @@ Subject: %s
 """
 
 
-def get_yield_vcb():
-    log_ref = '***get yield vcb***'
-    l_yield_vcb = []
+def get_white_list_vcb():
+    log_ref = '***get white_list vcb***'
+    l_white_list_vcb = []
 
     try:
         # r = requests.get('http://localhost:5000/get_info/1', data = {'key':'value'})
         # https://requests.readthedocs.io/en/master/user/quickstart/
-        # r = requests.get('http://localhost:5000/get_yield')
-        r = requests.get(cred.YIELD_HOST)                 # returns jsonify(l_yield_vcb) <--- ['gov.il', ... ]
+        # r = requests.get('http://localhost:5000/get_white_list')
+        r = requests.get(cred.WHITE_LIST_HOST)                 # returns jsonify(l_white_list_vcb) <--- ['gov.il', ... ]
         # print(r.status_code)
         # print(r.text)
         # print(type(r.json()))                           # ==> r.json will receive the type from server was jsonify-ed
@@ -111,11 +111,11 @@ def get_yield_vcb():
         # line = a.translate(d_translation)               # '["gov.il","abc","eddu"]' ---> 'gov.il,abc,eddu'
 
         if r.status_code is 200 and type(r.json()) is list:
-            l_yield_vcb += r.json()
+            l_white_list_vcb += r.json()
 
     except Exception as e:
         print('%s %s' % (log_ref, e))
 
-    return l_yield_vcb
+    return l_white_list_vcb
 
 

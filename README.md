@@ -74,7 +74,7 @@ put "**chk_his.vbs**" file inside a dir that opened by above command,<br>
 - add Internet Explorer support <br>
 - installer~ <br>
 - online registration - credentials <br>
-- white list online handle (get_yield) <br>
+- white list online handle <br>
 
 
 
