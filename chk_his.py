@@ -1,4 +1,3 @@
-#
 import sqlite3
 from datetime import datetime, timedelta
 import time
@@ -9,8 +8,7 @@ import os
 import chk_his_env as env
 
 
-#
-# _______________________________________VARS_______________________________________________________________________
+#region _______________________________________VARS_______________________________________________________________________
 
 L_HISTORY_DB = env.L_HISTORY_DB             # print(L_HISTORY_DB)
 
@@ -25,10 +23,9 @@ L_RECIPIENTS = env.L_RECIPIENTS             # ['kev.mitnick@gmail.com']
 SUBJ = platform.node().split('.')[0] + '_'
 
 EMAIL_TEXT = env.EMAIL_TEXT
+#endregion
 
-
-#
-# _______________________________________FUNCTIONS__________________________________________________________________
+#region _______________________________________FUNCTIONS__________________________________________________________________
 
 
 #
@@ -176,11 +173,11 @@ def refreshing_daily_mail(i_msg_white_list_global_daily):
 
     except Exception as e:
         print('%s %s' % (log_ref, e))
+#endregion
 
 
-#
-#
-#  _____________________________________________CLASS________________________________________________________________
+#region ___________________________________________CLASS________________________________________________________________
+##
 class History:
     def __init__(self, mm, sec):
         # self.delta_dd = 0
@@ -237,11 +234,10 @@ class History:
 
         except Exception as e:
             print('%s %s' % (log_ref, e))
+#endregion
 
-
-#
-#
-# _____________________________________________MAIN_________________________________________________________________
+#region _____________________________________________MAIN_________________________________________________________________
+##
 Running = True
 
 # TODO: request from server delta time to sleep
@@ -283,3 +279,4 @@ while Running:
 
     #
     time.sleep((chrome_his.delta_mm * 60) + chrome_his.delta_sec - 3)
+#endregion
