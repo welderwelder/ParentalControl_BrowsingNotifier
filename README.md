@@ -2,7 +2,7 @@
 Script runs hidden on <i>childs</i> PC in the background, sampling browsers histories - sends simple summary to designated <i>parental</i> email address.
 <br><br>
 
-create **credentials.py** by copying [cred](./credentials%20(copy).py) <br>
+create **credentials.py** by copying [credentials (copy).py](./credentials%20(copy).py) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
@@ -13,12 +13,8 @@ sender mail &nbsp;+&nbsp; pw  &nbsp;+&nbsp;  recipients mail list
 
 <h3>Linux:</h3>
 
-_IF NOT INSTALLED:_ install python3<br> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-(sqlite3 should be included, if not: should be installed: "sudo apt install sqlite")
+_Requirements:_ python3<br>
+ 
 
 **copy**: <br> 
 &nbsp; _chk_his.py_ <br>
@@ -33,22 +29,25 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         _(example: "/home/john/Documents/chk_his/")_
 
-`chmod +x _install_modules.sh_`  
+`chmod +x install_modules.sh`  
 
-run: "**./install_modules.sh**"
+<!--run: "**./install_modules.sh**"-->
+<!--run: "[./install_modules.sh](install_modules.sh)"-->
+run: `./install_modules.sh`
 
 
 `chmod +x chk_his.sh`
 
-**crontab** -e &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--**crontab** -e--> 
+`crontab -e` 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp; ---> &nbsp;&nbsp; @reboot &nbsp; $HOME/_"install~dir"_/chk_his.sh
 
 <br>
 
 <h3>Windows:</h3>
 
-_IF NOT INSTALLED:_ install python3<br>
-(sqlite3 should be included, if not: should be installed: install_modules section)
+_Requirements:_ python3<br>
 
 **copy**: <br>
 &nbsp; _chk_his.py_  <br>
@@ -63,7 +62,8 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 <i>(example: C:\Users\john\chk_his\)</i>  
 
-run: "**install_modules.bat**"
+<!--run: "**install_modules.bat**"-->
+run: `install_modules.bat`
                                                              
 "**start**" --> "run" --> "shell:startup"
 

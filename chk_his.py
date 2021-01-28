@@ -8,7 +8,8 @@ import os
 import chk_his_env as env
 
 
-#region _______________________________________VARS_______________________________________________________________________
+#
+# region ___________________________________VARS_______________________________________________________________________
 
 L_HISTORY_DB = env.L_HISTORY_DB             # print(L_HISTORY_DB)
 
@@ -23,12 +24,13 @@ L_RECIPIENTS = env.L_RECIPIENTS             # ['kev.mitnick@gmail.com']
 SUBJ = platform.node().split('.')[0] + '_'
 
 EMAIL_TEXT = env.EMAIL_TEXT
-#endregion
-
-#region _______________________________________FUNCTIONS__________________________________________________________________
-
+# endregion
 
 #
+#
+# region ___________________________________FUNCTIONS__________________________________________________________________
+
+
 # PyCharm "thinks" that you might have wanted to have a static method, but you forgot to declare it to be
 # static (using the @staticmethod decorator). ==> outside of the class
 # def db_file_copy(self, db_file):
@@ -173,11 +175,11 @@ def refreshing_daily_mail(i_msg_white_list_global_daily):
 
     except Exception as e:
         print('%s %s' % (log_ref, e))
-#endregion
+# endregion
 
 
-#region ___________________________________________CLASS________________________________________________________________
-##
+#
+# region _________________________________________CLASS________________________________________________________________
 class History:
     def __init__(self, mm, sec):
         # self.delta_dd = 0
@@ -234,10 +236,12 @@ class History:
 
         except Exception as e:
             print('%s %s' % (log_ref, e))
-#endregion
+# endregion
 
-#region _____________________________________________MAIN_________________________________________________________________
-##
+#
+#
+# region _________________________________________MAIN_________________________________________________________________
+#
 Running = True
 
 # TODO: request from server delta time to sleep
@@ -279,4 +283,4 @@ while Running:
 
     #
     time.sleep((chrome_his.delta_mm * 60) + chrome_his.delta_sec - 3)
-#endregion
+# endregion
