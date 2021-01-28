@@ -2,12 +2,12 @@
 Script runs hidden on <i>childs</i> PC in the background, sampling browsers histories - sends simple summary to designated <i>parental</i> email address.
 <br><br>
 
-create **credentials.py** by copying _"credentials (copy).py"_<br>
+create **credentials.py** by copying [cred](./credentials%20(copy).py) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-sender mail &nbsp;+&nbsp; pw  &nbsp;+&nbsp;  receipients mail list
+sender mail &nbsp;+&nbsp; pw  &nbsp;+&nbsp;  recipients mail list
 
 <br>
 
@@ -31,13 +31,14 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        _(example: "/home/pi/Documents/chk_his/")_
+                        _(example: "/home/john/Documents/chk_his/")_
 
-**chmod** +x _install_modules.sh_<br>
+`chmod +x _install_modules.sh_`  
+
 run: "**./install_modules.sh**"
 
 
-**chmod** +x chk_his.sh
+`chmod +x chk_his.sh`
 
 **crontab** -e &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp; ---> &nbsp;&nbsp; @reboot &nbsp; $HOME/_"install~dir"_/chk_his.sh
@@ -60,7 +61,7 @@ _IF NOT INSTALLED:_ install python3<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-<i>(example: C:\Users\ u-s-e-r \\chk_his\\)</i>  
+<i>(example: C:\Users\john\chk_his\)</i>  
 
 run: "**install_modules.bat**"
                                                              
